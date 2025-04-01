@@ -1,10 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Dastur</title>
-</head>
-<body>
-    <h1>Salom Loyiha amalga oshdimi</h1>
-</body>
-</html>
+{% extends 'base.html' %}
+{% block content %}
+{% for post in object_list %}
+    <div class="Su">
+        <h2><a href="">{{post.title}}</a> </h2>
+    </div>
+{% endfor %}
+{% endblock content %}
